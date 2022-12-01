@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+ <head>
+ <meta charset = "UTF-8">
+ <title>textBoxes.html</title>
+ <script type='text/javascript' src='translate.js'></script>
+ </head>
+ <body>
+ <h1>Text Box Input and Output</h1>
+ <form action = "">
+  <fieldset>
+  <label>Type your name: </label>
+  <input type = "text"
+    id = "txtName" />
+  <input type = "button"
+    value = "click me"
+    onclick = "translate()"/>
+  <input type = "text"
+    id = "txtOutput" />
+  </fieldset>
+ </form>
+ </body>
+</html>
