@@ -1,0 +1,20 @@
+import random
+def OKKO():
+  tqPlain = ["A", "B", "C", "H", "E", "G", "I", "O", "P", "R", "T", "U", "FOR"]
+  tqMapped = ["4", "8", "K", "#", "3", "6", "1", "0", "9", "2", "7", "V", "4"]
+  tqRandomPlain = ["S"]
+  tqRandomMapped = [["5", "Z"]]
+  plain = str(input("Enter your plaintext : ")).upper()
+  tqed = plain
+  for x in range(len(tqPlain)):
+    tqed = tqed.replace(tqPlain[x], tqMapped[x])
+  for y in range(len(tqRandomPlain)):
+    for n in range(len(tqed)):
+      if tqed[n] == tqRandomPlain[y]:
+        tqed = tqed[0:n] + random.choice(tqRandomMapped[y]) + tqed[n+1:len(tqed)]
+  print(tqed)
+  print("[ " + plain + " ]")
+  #print("// " + plain)
+OKKO()
+# a = 4, b = 8, c = k, h = #, e = 3, g = 6, i = 1,o = 0, p = 9, r = 2, s = 5, s = Z, t = 7, u = V
+#// TEXT or [ TEXT ]
