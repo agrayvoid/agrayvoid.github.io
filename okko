@@ -3,7 +3,7 @@
  <head>
  <meta charset = "UTF-8">
  <title>textBoxes.html</title>
- <script type='text/javascript' src='translate.js'></script>
+ 
  </head>
  <body>
  <h1>Text Box Input and Output</h1>
